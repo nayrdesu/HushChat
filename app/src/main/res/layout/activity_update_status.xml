@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e4e4e4"
+    tools:context="com.ansoft.chatapp.UpdateStatusActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbarrr"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/toolbarrr"
+        android:background="@drawable/bg_parent_rounded_corner"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/statusField"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:lines="1"
+                android:maxLength="25"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Enter your status"
+                android:paddingLeft="5dp" />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Update"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="right"
+            android:id="@+id/updateBtn"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_rect_button_blue"
+            android:textColor="@color/textColorPrimary"
+            android:layout_below="@+id/statusField"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/layoutlinear"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_parent_rounded_corner"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your new status"
+            android:id="@+id/textView2"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp" />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

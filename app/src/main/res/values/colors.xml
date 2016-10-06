@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f94f3b</color>
+    <color name="colorPrimaryDark">#d03421</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#f94f3b</color>
+
+    <color name="ball1">#FFD91C</color>
+    <color name="ball2">#FF4B4A</color>
+    <color name="ball3">#3D8EFF</color>
+    <color name="ball4">#1caa7a</color>
+
+    <integer-array name="colors">
+        <item>@color/ball1</item>
+        <item>@color/ball2</item>
+        <item>@color/ball3</item>
+        <item>@color/ball4</item>
+    </integer-array>
+</resources>

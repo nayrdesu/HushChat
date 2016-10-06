@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/message_edittext_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello I am chandler"
+            android:textColor="#323232"
+            android:textSize="20dp"
+            android:layout_below="@+id/tvSenderName"
+            android:id="@+id/txtMsg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5:20PM"
+            android:textColor="#b1b1b1"
+            android:textSize="8dp"
+            android:layout_below="@+id/txtMsg"
+            android:layout_alignLeft="@+id/txtMsg"
+            android:layout_alignStart="@+id/txtMsg"
+            android:id="@+id/txtTimeStamp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abinash Neupane"
+            android:visibility="gone"
+            android:id="@+id/tvSenderName"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

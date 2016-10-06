@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ansoft.chatapp.FriendsActivity">
+    <item
+        android:id="@+id/action_upload_photo"
+        android:orderInCategory="100"
+        android:title="Upload Photo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_update_status"
+        android:orderInCategory="100"
+        android:title="Update Status"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_create_group"
+        android:orderInCategory="100"
+        android:title="Create Group"
+        app:showAsAction="never" />
+
+</menu>

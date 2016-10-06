@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/profImg">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/default_profile_photo_circle"
+            android:scaleType="centerCrop"
+            android:id="@+id/profImgforReal" />
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_circle"
+            android:padding="15dp"
+            android:gravity="center"
+            android:id="@+id/group_profile"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:id="@+id/tvFirstLetter"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/profImg"
+            android:layout_toEndOf="@+id/profImg"
+            android:layout_toLeftOf="@+id/onlineicon"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/username"
+                android:textSize="20dp"
+
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/userstatus"
+                android:maxLines="1"
+                android:maxLength="100"
+                android:textSize="13dp"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/username"
+                android:layout_toRightOf="@+id/profImg"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/timeStamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 min"
+            android:layout_alignBottom="@+id/profImg"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

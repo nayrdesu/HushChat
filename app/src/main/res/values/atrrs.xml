@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="LoadingBalls">
+    <attr name="balls" format="integer"/>
+    <attr name="movement_cycle_time" format="integer"/>
+    <attr name="size_cycle_time" format="integer"/>
+    <attr name="ball_colors" format="reference"/>
+    <attr name="ball_size" format="dimension"/>
+    <attr name="enable_size_animation" format="boolean"/>
+    <attr name="min_ball_size" format="dimension"/>
+    <attr name="max_ball_size" format="dimension"/>
+    <attr name="path" format="string"/>
+  </declare-styleable>
+  <declare-styleable name="CircleImageView">
+    <attr name="civ_border_width" format="dimension" />
+    <attr name="civ_border_color" format="color" />
+    <attr name="civ_border_overlay" format="boolean" />
+    <attr name="civ_fill_color" format="color" />
+  </declare-styleable>
+  <declare-styleable name="MaskedEditText">
+    <attr name="mask" format="string"/>
+    <attr name="notMaskedSymbol" format="string"/>
+    <attr name="replacementChar" format="string"/>
+    <attr name="deleteChar" format="string"/>
+    <attr name="format" format="string"/>
+    <attr name="maskIcon" format="reference"/>
+    <attr name="maskIconColor" format="reference"/>
+    <attr name="android:inputType"/>
+  </declare-styleable>
+</resources>

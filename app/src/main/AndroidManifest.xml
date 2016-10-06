@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ansoft.chatapp" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".YouChatApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme" >
+        <activity
+            android:name=".FriendsActivity"
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="1fuvaTRaC4U57PL1mSLfdx2esI0Y8QCVWNlmubp6" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="h6eu6ImxzCsAjtPghb4DadhL4ZQYOmedY0CzLFvS" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up" />
+        <activity
+            android:name=".UploadPhotoActivity"
+            android:label="@string/title_activity_upload_photo"
+            android:parentActivityName=".FriendsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ansoft.chatapp.FriendsActivity" />
+        </activity>
+        <activity
+            android:name=".AddFriendActivity"
+            android:label="@string/title_activity_add_friend" >
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:label="Chat"
+            android:parentActivityName=".FriendsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FriendsActivity" />
+        </activity>
+        <activity
+            android:name=".UpdateStatusActivity"
+            android:label="@string/title_activity_update_status"
+            android:parentActivityName=".FriendsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ansoft.chatapp.FriendsActivity" />
+        </activity>
+        <activity
+            android:name=".NoConnection"
+            android:label="@string/title_activity_no_connection"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".CreateGroupActivity"
+            android:label="@string/title_activity_create_group"
+            android:parentActivityName=".FriendsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ansoft.chatapp.FriendsActivity" />
+        </activity>
+    </application>
+
+</manifest>

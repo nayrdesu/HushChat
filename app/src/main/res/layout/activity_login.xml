@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ansoft.chatapp.LoginActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+
+        android:id="@+id/toolbarrr"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:layout_below="@+id/toolbarrr"
+        android:id="@+id/linearLayout">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/youchat_logo"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameField"
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Username"
+                android:paddingLeft="5dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Login"
+            android:layout_gravity="center"
+            android:id="@+id/loginButton"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_rect_button_blue"
+            android:textColor="@color/textColorPrimary"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Create Account"
+        android:id="@+id/tvCreateAccount"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
